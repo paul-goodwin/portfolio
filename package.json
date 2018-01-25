@@ -2,18 +2,21 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "UX portfolio dev env",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "portfolio"
+    "url": "https://github.com/paul-goodwin/portfolio"
   },
   "keywords": [
     "UX",
     "Portfolio"
   ],
   "author": "Paul Goodwin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.6.2",
+  }
 }
