@@ -6,9 +6,9 @@
             "sass.enabled": true,
             "sass.options": {
                 "includePaths": [
-                    "node_modules/bulma/"
+                    "../node_modules/bulma/"
                 ],
-                "outputDir": "prod/css/",
+                "outputDir": "../prod/css/",
                 "imagePath": null,
                 "sourceComments": false,
                 "outputStyle": "nested"
