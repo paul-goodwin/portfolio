@@ -2848,6 +2848,9 @@ a.box:active {
   .image.is-128x128 {
     height: 128px;
     width: 128px; }
+  .image.is-256x256 {
+    height: 256px;
+    width: 256px; }
 
 .notification {
   background-color: whitesmoke;
@@ -6503,5 +6506,12 @@ label.panel-block {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
+
+@media screen and (max-width: 768px) {
+  .columns.is-reverse-mobile {
+    flex-direction: column-reverse;
+    display: flex; }
+    .columns.is-reverse-mobile .column {
+      width: 100%; } }
 
 /*# sourceMappingURL=app.css.map */
