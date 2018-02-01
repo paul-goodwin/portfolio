@@ -6507,6 +6507,21 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+@media screen and (min-width: 769px), print {
+  .modal-content.image {
+    width: 1000px;
+    margin: 0 40px; } }
+
+.widescreen-cap {
+  margin: 0 auto;
+  max-width: 1280px; }
+
+.subtitle.pretitle {
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+  color: #363636;
+  font-weight: 700; }
+
 @media screen and (max-width: 768px) {
   .columns.is-reverse-mobile {
     flex-direction: column-reverse;

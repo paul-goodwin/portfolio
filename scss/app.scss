@@ -5,10 +5,29 @@ $grey-lightest: hsl(0, 0%, 98%) !default
 $body-background-color: $grey-lightest !default
 
 // Image size defaults
-$dimensions: 16 24 32 48 64 96 128 256;
+$dimensions: 16 24 32 48 64 96 128 256 !default
+$modal-content-image-width: 1000px !default
 
 @import "bulma.sass";
 
+.modal-content.image {
+    @include tablet {
+        width: $modal-content-image-width;
+        margin: 0 40px;
+    }
+}
+
+.widescreen-cap {
+     margin: 0 auto;
+     max-width: 1280px;
+}
+
+.subtitle.pretitle {
+    padding-bottom: 0.25rem;
+    text-transform: uppercase;
+    color: $grey-darker;
+    font-weight: $weight-bold;
+}
 
 .columns.is-reverse-mobile {
   @include mobile {
