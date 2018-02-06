@@ -17,6 +17,11 @@ $modal-content-image-width: 1000px !default
     }
 }
 
+.content blockquote.is-primary {
+  background-color: lighten($info, 44%);
+  border-color: lighten($info, 20%);
+}
+
 .widescreen-cap {
      margin: 0 auto;
      max-width: 1280px;

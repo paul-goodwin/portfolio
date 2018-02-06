@@ -6512,6 +6512,10 @@ label.panel-block {
     width: 1000px;
     margin: 0 40px; } }
 
+.content blockquote.is-primary {
+  background-color: #f1f9fe;
+  border-color: #7fc6f5; }
+
 .widescreen-cap {
   margin: 0 auto;
   max-width: 1280px; }
