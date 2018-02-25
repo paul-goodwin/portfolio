@@ -1,15 +1,28 @@
 $(document).ready(function () {
-    $("#detail-button").click(function () {
-        $("#more_research").toggleClass("is-hidden-touch");
-        /*        $(this).text(function (i, text) {
-                    return text === "More" ? "Less" : "More";
-                })*/
+    $(".highlight").click(function () {
+        var target = $(this).data('target');
+        $(target).toggleClass("is-hidden");
+    });
+
+    $('.modal-button').click(function () {
+        var target = $(this).data('target');
+        $(target).addClass('is-active');
     });
 
     $(".modal-close, .modal-background").click(function () {
         $(".modal").removeClass("is-active");
     });
+    
+    
+/*  
+    $("#detail-button").click(function () {
+        $("#more_research").toggleClass("is-hidden-touch");
+                $(this).text(function (i, text) {
+                    return text === "More" ? "Less" : "More";
+                })
+    });
 
+    });
     $("#image-1").click(function () {
         $("#modal-1").addClass("is-active");
     });
@@ -45,5 +58,7 @@ $(document).ready(function () {
     });
     $("#image-12").click(function () {
         $("#modal-12").addClass("is-active");
-    });
+    });*/
+    
+    
 });
