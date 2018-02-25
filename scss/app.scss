@@ -5,10 +5,98 @@ $grey-lightest: hsl(0, 0%, 98%) !default
 $body-background-color: $grey-lightest !default
 
 // Image size defaults
-$dimensions: 16 24 32 48 64 96 128 256;
+$dimensions: 16 24 32 48 64 96 128 256 !default
+$modal-content-image-width: 1000px !default
 
+// Responsive type definitions
+//$body-size: 18px !default
+$body-line-height: 1.6 !default
+    
 @import "bulma.sass";
 
+.content {
+    @include desktop {
+        $body-size: 1.15rem;
+    }
+}
+
+.modal-content.image {
+    @include tablet {
+        width: $modal-content-image-width;
+        margin: 0 40px;
+    }
+}
+
+.section.is-reversed {
+    background: $light;
+    padding: 4rem;
+}
+
+.caption {
+    line-height: 1.5;
+}
+
+.title.intro {
+    line-height: 1.6;
+}
+
+.content blockquote.is-primary {
+  background-color: lighten($info, 44%);
+  border-color: lighten($info, 20%);
+}
+
+.widescreen-cap {
+     margin: 0 auto;
+     max-width: 1280px;
+}
+
+.subtitle.pretitle {
+    padding-bottom: 0.25rem;
+    text-transform: uppercase;
+    color: $grey-darker;
+    font-weight: $weight-bold;
+}
+
+.highlight {
+    background-color: lighten($success, 35%);
+    cursor: pointer;
+    &:hover { background-color: lighten($success, 15%); }
+    &:hover .comment.icon { color: $dark; }
+}
+
+.comment {
+    float: right;
+    &.icon {
+        z-index: 2;
+        position: relative;
+        text-align: right;
+        margin-left: 1rem;
+        margin-right: -5rem;
+        @include mobile {
+            margin-right: 0rem;
+        }
+    }
+    &.content {
+        z-index: 3;
+        position: absolute;
+        margin-top: 24px;
+        margin-left: 35%;
+        width: 50%;
+        @include mobile {
+            margin-left: 10%;
+            width: 80%;
+        }
+    }
+}
+
+.material-icons {
+    color: lighten($dark, 20%);
+    cursor: pointer;
+    &:hover { color: lighten($success, 15%); }
+    &.md-24 { font-size: 24px; }
+    &.md-36 { font-size: 36px; }
+    &.md-48 { font-size: 48px; height: 48px; width: 48px;}
+}
 
 .columns.is-reverse-mobile {
   @include mobile {
